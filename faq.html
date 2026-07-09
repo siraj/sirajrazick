@@ -1,145 +1,185 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>FAQ - Siraj Razick</TITLE>
-</HEAD>
-<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ - Siraj Razick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
-<TR>
-<TD VALIGN="TOP" WIDTH="160">
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="+1"><B>Siraj Razick</B></FONT>
-</TD></TR>
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="-1">Open Source Developer</FONT>
-</TD></TR>
-</TABLE>
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD BGCOLOR="#FFFFFF">
-<FONT FACE="Courier New, Courier, monospace" SIZE="-1">
-<BR><B>Navigation</B><HR WIDTH="100%">
-&nbsp;&nbsp;<A HREF="index.html">Home</A><BR>
-&nbsp;&nbsp;<A HREF="about.html">About Me</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html">Projects</A><BR>
-&nbsp;&nbsp;<A HREF="blog/index.html">Blog</A><BR>
-&nbsp;&nbsp;<A HREF="links.html">Links</A><BR>
-&nbsp;&nbsp;<A HREF="faq.html">FAQ</A><BR>
-&nbsp;&nbsp;<A HREF="hire.html">Hire Me</A><BR>
-&nbsp;&nbsp;<A HREF="contact.html">Contact</A><BR>
-<HR WIDTH="100%"><B>Topics</B><BR>
-&nbsp;&nbsp;<A HREF="projects.html#desktop">Desktop/Linux</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#browser">Browser Engines</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#mobile">Mobile/Multimedia</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#blockchain">Blockchain</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#ai">AI Platforms</A><BR>
-<HR WIDTH="100%"><B>Misc</B><BR>
-&nbsp;&nbsp;<A HREF="gpg-key.txt">PGP Key</A><BR>
-&nbsp;&nbsp;<A HREF="resume.html">Resume</A><BR>
-&nbsp;&nbsp;<A HREF="guestbook.html">Guestbook</A><BR>
-<HR WIDTH="100%"><FONT SIZE="-2">Last updated:<BR>2024-01-15<BR><BR>Page served by<BR>Apache/2.4<BR>on Linux<BR></FONT>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-<TD VALIGN="TOP" WIDTH="10">&nbsp;</TD>
-<TD VALIGN="TOP">
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="10">
-<TR><TD>
-<FONT FACE="Times New Roman, Times, serif">
+<table class="layout">
+<tr>
+<td class="sidebar">
+<table class="sidebar-name">
+<tr><td><span class="name-title">Siraj Razick</span></td></tr>
+<tr><td><span class="name-sub">Open Source Developer</span></td></tr>
+</table>
+<table class="sidebar-nav">
+<tr><td>
+<div class="sidebar-content">
+<br><b>Navigation</b><hr class="nav">
+&nbsp;&nbsp;<a href="index.html">Home</a><br>
+&nbsp;&nbsp;<a href="about.html">About Me</a><br>
+&nbsp;&nbsp;<a href="projects.html">Projects</a><br>
+&nbsp;&nbsp;<a href="blog/index.html">Blog</a><br>
+&nbsp;&nbsp;<a href="links.html">Links</a><br>
+&nbsp;&nbsp;<a href="faq.html">FAQ</a><br>
+&nbsp;&nbsp;<a href="hire.html">Hire Me</a><br>
+&nbsp;&nbsp;<a href="contact.html">Contact</a><br>
+<hr class="nav"><b>Topics</b><br>
+&nbsp;&nbsp;<a href="projects.html#desktop">Desktop/Linux</a><br>
+&nbsp;&nbsp;<a href="projects.html#browser">Browser Engines</a><br>
+&nbsp;&nbsp;<a href="projects.html#mobile">Mobile/Multimedia</a><br>
+&nbsp;&nbsp;<a href="projects.html#blockchain">Blockchain</a><br>
+&nbsp;&nbsp;<a href="projects.html#ai">AI Platforms</a><br>
+<hr class="nav"><b>Misc</b><br>
+&nbsp;&nbsp;<a href="gpg-key.txt">PGP Key</a><br>
+&nbsp;&nbsp;<a href="resume.html">Resume</a><br>
+&nbsp;&nbsp;<a href="guestbook.html">Guestbook</a><br>
+<hr class="nav"><span class="sidebar-updated">Last updated:<br>2024-01-15<br><br>Page served by<br>Apache/2.4<br>on Linux<br></span>
+</div>
+</td></tr>
+</table>
+</td>
+<td class="spacer">&nbsp;</td>
+<td class="content">
+<table class="content">
+<tr><td>
+<div class="content-body">
 
-<H2><FONT FACE="Arial, Helvetica, sans-serif">Frequently Asked Questions</FONT></H2>
+<h2>FAQ</h2>
 
-<H3>Q: What areas do you work in?</H3>
-<P>
-A: A bit of everything, honestly. Linux desktop, browser engines, mobile
-and multimedia, blockchain, and AI infrastructure. The
-<A HREF="projects.html">projects page</A> has the full rundown.
-</P>
+<p>
+Questions I get asked often. If yours isn't here,
+<a href="contact.html">send me a message</a>.
+</p>
 
-<H3>Q: What browser engines have you worked on?</H3>
-<P>
-A: V8 (performance work), SpiderMonkey (GObject Introspection),
-Mozilla/Gecko (CSS animations), WebKit (HTML5 video, WebRTC), and
-Google Chrome (e-ink rendering).
-</P>
+<h3>What do you do?</h3>
 
-<H3>Q: What is PlexyDesk?</H3>
-<P>
-A: PlexyDesk is a desktop extension framework I built. It gives you
-compositor-level desktop widgets and a protocol for integrating desktop
-shells with Wayland.
-</P>
+<p>
+I'm a software developer. I work on systems-level software: browser
+engines, Linux desktop platforms, mobile OS components, blockchain
+infrastructure, and AI compute platforms. I've been doing this for
+over a decade, mostly in open source.
+</p>
 
-<H3>Q: What is CloudGPU?</H3>
-<P>
-A: CloudGPU is a platform I started for AI compute and agent tooling.
-It gives you GPU resources and the tooling to build and deploy AI agents.
-</P>
+<h3>What open source projects have you contributed to?</h3>
 
-<H3>Q: What is efinder.lk?</H3>
-<P>
-A: efinder.lk is a fact-checking engine that uses AI agents to verify
-claims and give you sourced fact-checks.
-</P>
+<p>
+V8, WebKit, Mozilla SpiderMonkey and Gecko, GNOME (Telepathy), KDE
+Plasma (I built KBFX), and GStreamer, among others. You can see the
+full list on my <a href="projects.html">projects page</a>.
+</p>
 
-<H3>Q: What is Hola Agent?</H3>
-<P>
-A: Hola Agent is a framework I built for creating autonomous AI agents.
-It handles tool use, memory, and task planning.
-</P>
+<h3>Are you available for hire?</h3>
 
-<H3>Q: What blockchain projects have you worked on?</H3>
-<P>
-A: Web3 systems, Bitcoin Core, and LiquidBTC / sidechain technology.
-Most of my work there is at the protocol level, on ledger systems and
-core infrastructure.
-</P>
+<p>
+Yes. I do consulting, architecture design, and hands-on development.
+Check the <a href="hire.html">hire me</a> page for details on
+engagement models and areas I cover.
+</p>
 
-<H3>Q: What was your role in the Nokia / MeeGo ecosystem?</H3>
-<P>
-A: I worked on GStreamer, the Mozilla-based Nokia Browser, and the
-Nokia Harmattan / MeeGo mobile OS. Mostly system-level components,
-UI framework integration, and multimedia.
-</P>
+<h3>What's CloudGPU?</h3>
 
-<H3>Q: Why does this site look like it's from the 1990s?</H3>
-<P>
-A: Because it is. I like web pages that load fast and are easy to read.
-No JavaScript, no tracking, no bloated frameworks. Just HTML and CSS.
-It works in any browser, including Lynx.
-</P>
+<p>
+CloudGPU is a platform I founded for AI compute and agent tooling. It
+provides GPU resources and infrastructure for building and deploying
+AI agents. Think of it as the plumbing that lets you run inference and
+agent workloads without managing the hardware yourself.
+</p>
 
-<H3>Q: How can I contact you?</H3>
-<P>
-A: Check the <A HREF="contact.html">contact page</A>. But read through
-this FAQ first, your question might already be answered here.
-</P>
+<h3>What's Hola Agent?</h3>
 
-<P>
-<HR WIDTH="50%" NOSHADE ALIGN="LEFT">
-<BR>
-<FONT SIZE="-1">
-[ <A HREF="index.html">Home</A> | <A HREF="about.html">About</A> | <A HREF="contact.html">Contact</A> ]
-</FONT>
+<p>
+Hola Agent is a framework I built for creating autonomous AI agents.
+It handles tool use, memory, and task planning so you can build agents
+that actually do things rather than just chat.
+</p>
 
-</FONT>
-</TD></TR>
-</TABLE>
-<HR WIDTH="90%" NOSHADE>
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD ALIGN="CENTER">
-<FONT SIZE="-2" FACE="Arial, Helvetica, sans-serif">
-Copyright &copy; 2024 Siraj Razick. All rights reserved.<BR>
-This page was hand-written in vi on Linux.<BR>
-<A HREF="contact.html">Contact</A> | <A HREF="index.html">Home</A> | <A HREF="http://validator.w3.org/">Validate</A>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-</TR>
-</TABLE>
+<h3>What's efinder.lk?</h3>
 
-</BODY>
-</HTML>
+<p>
+It's a fact-checking engine that uses AI agents to verify claims and
+give you sourced fact-checks. Built for the Sri Lankan information
+landscape, where misinformation spreads fast and fact-checking
+resources are thin.
+</p>
+
+<h3>What's your background in blockchain?</h3>
+
+<p>
+I've worked on BTC and Bitcoin Core, LiquidBTC, and sidechain
+technology. Most of my work has been at the protocol and ledger level:
+consensus mechanisms, federated infrastructure, and decentralized
+application platforms.
+</p>
+
+<h3>Why is this website so old-school?</h3>
+
+<p>
+Because I like it this way. It loads fast, works in any browser, and
+doesn't need JavaScript. I hand-write the HTML in vi, just like I've
+always done. No frameworks, no build tools, no tracking. Just
+content.
+</p>
+
+<h3>Can I see your code?</h3>
+
+<p>
+Most of my open source work is on <a href="https://github.com/sirajrazick">GitHub</a>.
+Some of my older contributions are in the GNOME, KDE, Mozilla, and
+WebKit repositories. The <a href="links.html">links page</a> has the
+full list.
+</p>
+
+<h3>How can I contact you?</h3>
+
+<p>
+Email is best. Check the <a href="contact.html">contact page</a> for
+my email address, PGP key, and other ways to reach me. I usually
+respond within a couple of days.
+</p>
+
+<h3>Do you mentor or take on interns?</h3>
+
+<p>
+Sometimes. If you're working on something in my area of expertise and
+you're stuck, reach out and I'll see if I can help. I don't have a
+formal program, but I'm happy to point people in the right direction
+or review code when I have time.
+</p>
+
+<h3>What editor do you use?</h3>
+
+<p>
+vi. Specifically Neovim these days, but I started with classic vi and
+I still use it when I need to. I've tried other editors over the
+years, but I always come back.
+</p>
+
+<p>
+<hr class="section">
+<br>
+<span class="footer-nav">
+[ <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a> ]
+</span>
+</p>
+
+</div>
+</td></tr>
+</table>
+<hr class="footer">
+<table class="footer">
+<tr><td class="footer-text">
+Copyright &copy; 2024 Siraj Razick. All rights reserved.<br>
+This page was hand-written in vi on Linux.<br>
+<a href="contact.html">Contact</a> | <a href="index.html">Home</a> | <a href="https://validator.w3.org/">Validate</a>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

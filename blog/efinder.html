@@ -1,104 +1,103 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>efinder.lk: Agentic Fact-Checking with AI - Blog - Siraj Razick</TITLE>
-</HEAD>
-<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>efinder.lk: Agentic Fact-Checking with AI - Blog - Siraj Razick</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
-<TR>
-<TD VALIGN="TOP" WIDTH="160">
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="+1"><B>Siraj Razick</B></FONT>
-</TD></TR>
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="-1">Open Source Developer</FONT>
-</TD></TR>
-</TABLE>
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD BGCOLOR="#FFFFFF">
-<FONT FACE="Courier New, Courier, monospace" SIZE="-1">
-<BR><B>Navigation</B><HR WIDTH="100%">
-&nbsp;&nbsp;<A HREF="../index.html">Home</A><BR>
-&nbsp;&nbsp;<A HREF="../about.html">About Me</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html">Projects</A><BR>
-&nbsp;&nbsp;<A HREF="index.html">Blog</A><BR>
-&nbsp;&nbsp;<A HREF="../links.html">Links</A><BR>
-&nbsp;&nbsp;<A HREF="../faq.html">FAQ</A><BR>
-&nbsp;&nbsp;<A HREF="../hire.html">Hire Me</A><BR>
-&nbsp;&nbsp;<A HREF="../contact.html">Contact</A><BR>
-<HR WIDTH="100%"><B>Topics</B><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#desktop">Desktop/Linux</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#browser">Browser Engines</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#mobile">Mobile/Multimedia</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#blockchain">Blockchain</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#ai">AI Platforms</A><BR>
-<HR WIDTH="100%"><B>Misc</B><BR>
-&nbsp;&nbsp;<A HREF="../gpg-key.txt">PGP Key</A><BR>
-&nbsp;&nbsp;<A HREF="../resume.html">Resume</A><BR>
-&nbsp;&nbsp;<A HREF="../guestbook.html">Guestbook</A><BR>
-<HR WIDTH="100%"><FONT SIZE="-2">Last updated:<BR>2024-01-15<BR><BR>Page served by<BR>Apache/2.4<BR>on Linux<BR></FONT>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-<TD VALIGN="TOP" WIDTH="10">&nbsp;</TD>
-<TD VALIGN="TOP">
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="10">
-<TR><TD>
-<FONT FACE="Times New Roman, Times, serif">
+<table class="layout">
+<tr>
+<td class="sidebar">
+<table class="sidebar-name">
+<tr><td><span class="name-title">Siraj Razick</span></td></tr>
+<tr><td><span class="name-sub">Open Source Developer</span></td></tr>
+</table>
+<table class="sidebar-nav">
+<tr><td>
+<div class="sidebar-content">
+<br><b>Navigation</b><hr class="nav">
+&nbsp;&nbsp;<a href="../index.html">Home</a><br>
+&nbsp;&nbsp;<a href="../about.html">About Me</a><br>
+&nbsp;&nbsp;<a href="../projects.html">Projects</a><br>
+&nbsp;&nbsp;<a href="index.html">Blog</a><br>
+&nbsp;&nbsp;<a href="../links.html">Links</a><br>
+&nbsp;&nbsp;<a href="../faq.html">FAQ</a><br>
+&nbsp;&nbsp;<a href="../hire.html">Hire Me</a><br>
+&nbsp;&nbsp;<a href="../contact.html">Contact</a><br>
+<hr class="nav"><b>Topics</b><br>
+&nbsp;&nbsp;<a href="../projects.html#desktop">Desktop/Linux</a><br>
+&nbsp;&nbsp;<a href="../projects.html#browser">Browser Engines</a><br>
+&nbsp;&nbsp;<a href="../projects.html#mobile">Mobile/Multimedia</a><br>
+&nbsp;&nbsp;<a href="../projects.html#blockchain">Blockchain</a><br>
+&nbsp;&nbsp;<a href="../projects.html#ai">AI Platforms</a><br>
+<hr class="nav"><b>Misc</b><br>
+&nbsp;&nbsp;<a href="../gpg-key.txt">PGP Key</a><br>
+&nbsp;&nbsp;<a href="../resume.html">Resume</a><br>
+&nbsp;&nbsp;<a href="../guestbook.html">Guestbook</a><br>
+<hr class="nav"><span class="sidebar-updated">Last updated:<br>2024-01-15<br><br>Page served by<br>Apache/2.4<br>on Linux<br></span>
+</div>
+</td></tr>
+</table>
+</td>
+<td class="spacer">&nbsp;</td>
+<td class="content">
+<table class="content">
+<tr><td>
+<div class="content-body">
 
-<H2><FONT FACE="Arial, Helvetica, sans-serif">efinder.lk: Agentic Fact-Checking with AI</FONT></H2>
+<h2>efinder.lk: Agentic Fact-Checking with AI</h2>
 
-<P><FONT SIZE="-1"><I>2023-11-20</I></FONT></P>
+<p><span class="small"><i>2023-11-20</i></span></p>
 
-<P>
-I recently released efinder.lk, a fact-checking engine that uses AI
-agents to verify claims and detect misinformation.
-</P>
-<P>
-Here's how it works: the system breaks down a claim into searchable
-queries, gathers evidence from multiple sources, and then reasons
-about the collected information to arrive at a verdict. All of this
-happens autonomously, driven by an AI agent.
-</P>
-<P>
-A few design decisions worth noting:
-</P>
-<UL>
-<LI><B>Multi-source verification</B> &mdash; the agent cross-references multiple sources before reaching a conclusion</LI>
-<LI><B>Transparent reasoning</B> &mdash; each step of the fact-checking process is logged and can be reviewed</LI>
-<LI><B>Sinhala and Tamil support</B> &mdash; built for the Sri Lankan context with local language processing</LI>
-</UL>
-<P>
-The project is open source and on GitHub. I'm actively looking for
-contributors who are into AI safety and misinformation research.
-</P>
+<p>
+I recently released efinder.lk, an agentic fact-checking engine that
+uses AI to verify claims and detect misinformation.
+</p>
+<p>
+The system works by breaking down a claim into searchable queries,
+gathering evidence from multiple sources, and then reasoning about
+the collected information to arrive at a verdict. This is all done
+autonomously by an AI agent.
+</p>
+<p>
+Key design decisions:
+</p>
+<ul>
+<li><b>Multi-source verification</b> - the agent cross-references multiple sources before reaching a conclusion</li>
+<li><b>Transparent reasoning</b> - each step of the fact-checking process is logged and can be reviewed</li>
+<li><b>Sinhala and Tamil support</b> - built for the Sri Lankan context with local language processing</li>
+</ul>
+<p>
+The project is open source and available on GitHub. I am actively
+looking for contributors who are interested in AI safety and
+misinformation research.
+</p>
 
-<P>
-<HR WIDTH="50%" NOSHADE ALIGN="LEFT">
-<BR>
-<FONT SIZE="-1">
-[ <A HREF="index.html">Blog</A> | <A HREF="../index.html">Home</A> | <A HREF="../contact.html">Contact</A> ]
-</FONT>
+<p>
+<hr class="section">
+<br>
+<span class="footer-nav">
+[ <a href="index.html">Blog</a> | <a href="../index.html">Home</a> | <a href="../contact.html">Contact</a> ]
+</span>
+</p>
 
-</FONT>
-</TD></TR>
-</TABLE>
-<HR WIDTH="90%" NOSHADE>
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD ALIGN="CENTER">
-<FONT SIZE="-2" FACE="Arial, Helvetica, sans-serif">
-Copyright &copy; 2024 Siraj Razick. All rights reserved.<BR>
-This page was hand-written in vi on Linux.<BR>
-<A HREF="../contact.html">Contact</A> | <A HREF="../index.html">Home</A> | <A HREF="http://validator.w3.org/">Validate</A>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-</TR>
-</TABLE>
+</div>
+</td></tr>
+</table>
+<hr class="footer">
+<table class="footer">
+<tr><td class="footer-text">
+Copyright &copy; 2024 Siraj Razick. All rights reserved.<br>
+This page was hand-written in vi on Linux.<br>
+<a href="../contact.html">Contact</a> | <a href="../index.html">Home</a> | <a href="https://validator.w3.org/">Validate</a>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
 
-</BODY>
-</HTML>
+</body>
+</html>

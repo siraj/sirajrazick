@@ -1,107 +1,107 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>Launching CloudGPU: AI Infrastructure and Agent Tooling - Blog - Siraj Razick</TITLE>
-</HEAD>
-<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launching CloudGPU: AI Infrastructure and Agent Tooling - Blog - Siraj Razick</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
-<TR>
-<TD VALIGN="TOP" WIDTH="160">
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="+1"><B>Siraj Razick</B></FONT>
-</TD></TR>
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="-1">Open Source Developer</FONT>
-</TD></TR>
-</TABLE>
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD BGCOLOR="#FFFFFF">
-<FONT FACE="Courier New, Courier, monospace" SIZE="-1">
-<BR><B>Navigation</B><HR WIDTH="100%">
-&nbsp;&nbsp;<A HREF="../index.html">Home</A><BR>
-&nbsp;&nbsp;<A HREF="../about.html">About Me</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html">Projects</A><BR>
-&nbsp;&nbsp;<A HREF="index.html">Blog</A><BR>
-&nbsp;&nbsp;<A HREF="../links.html">Links</A><BR>
-&nbsp;&nbsp;<A HREF="../faq.html">FAQ</A><BR>
-&nbsp;&nbsp;<A HREF="../hire.html">Hire Me</A><BR>
-&nbsp;&nbsp;<A HREF="../contact.html">Contact</A><BR>
-<HR WIDTH="100%"><B>Topics</B><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#desktop">Desktop/Linux</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#browser">Browser Engines</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#mobile">Mobile/Multimedia</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#blockchain">Blockchain</A><BR>
-&nbsp;&nbsp;<A HREF="../projects.html#ai">AI Platforms</A><BR>
-<HR WIDTH="100%"><B>Misc</B><BR>
-&nbsp;&nbsp;<A HREF="../gpg-key.txt">PGP Key</A><BR>
-&nbsp;&nbsp;<A HREF="../resume.html">Resume</A><BR>
-&nbsp;&nbsp;<A HREF="../guestbook.html">Guestbook</A><BR>
-<HR WIDTH="100%"><FONT SIZE="-2">Last updated:<BR>2024-01-15<BR><BR>Page served by<BR>Apache/2.4<BR>on Linux<BR></FONT>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-<TD VALIGN="TOP" WIDTH="10">&nbsp;</TD>
-<TD VALIGN="TOP">
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="10">
-<TR><TD>
-<FONT FACE="Times New Roman, Times, serif">
+<table class="layout">
+<tr>
+<td class="sidebar">
+<table class="sidebar-name">
+<tr><td><span class="name-title">Siraj Razick</span></td></tr>
+<tr><td><span class="name-sub">Open Source Developer</span></td></tr>
+</table>
+<table class="sidebar-nav">
+<tr><td>
+<div class="sidebar-content">
+<br><b>Navigation</b><hr class="nav">
+&nbsp;&nbsp;<a href="../index.html">Home</a><br>
+&nbsp;&nbsp;<a href="../about.html">About Me</a><br>
+&nbsp;&nbsp;<a href="../projects.html">Projects</a><br>
+&nbsp;&nbsp;<a href="index.html">Blog</a><br>
+&nbsp;&nbsp;<a href="../links.html">Links</a><br>
+&nbsp;&nbsp;<a href="../faq.html">FAQ</a><br>
+&nbsp;&nbsp;<a href="../hire.html">Hire Me</a><br>
+&nbsp;&nbsp;<a href="../contact.html">Contact</a><br>
+<hr class="nav"><b>Topics</b><br>
+&nbsp;&nbsp;<a href="../projects.html#desktop">Desktop/Linux</a><br>
+&nbsp;&nbsp;<a href="../projects.html#browser">Browser Engines</a><br>
+&nbsp;&nbsp;<a href="../projects.html#mobile">Mobile/Multimedia</a><br>
+&nbsp;&nbsp;<a href="../projects.html#blockchain">Blockchain</a><br>
+&nbsp;&nbsp;<a href="../projects.html#ai">AI Platforms</a><br>
+<hr class="nav"><b>Misc</b><br>
+&nbsp;&nbsp;<a href="../gpg-key.txt">PGP Key</a><br>
+&nbsp;&nbsp;<a href="../resume.html">Resume</a><br>
+&nbsp;&nbsp;<a href="../guestbook.html">Guestbook</a><br>
+<hr class="nav"><span class="sidebar-updated">Last updated:<br>2024-01-15<br><br>Page served by<br>Apache/2.4<br>on Linux<br></span>
+</div>
+</td></tr>
+</table>
+</td>
+<td class="spacer">&nbsp;</td>
+<td class="content">
+<table class="content">
+<tr><td>
+<div class="content-body">
 
-<H2><FONT FACE="Arial, Helvetica, sans-serif">Launching CloudGPU: AI Infrastructure and Agent Tooling</FONT></H2>
+<h2>Launching CloudGPU: AI Infrastructure and Agent Tooling</h2>
 
-<P><FONT SIZE="-1"><I>2024-01-15</I></FONT></P>
+<p><span class="small"><i>2024-01-15</i></span></p>
 
-<P>
-Today I'm launching CloudGPU, a platform for AI compute and agent
-tooling. It gives you GPU resources and a set of tools for building,
-deploying, and managing AI agents.
-</P>
-<P>
-The idea is to make it easier for developers to work with large language
-models and build autonomous agent systems. Here's what's included:
-</P>
-<UL>
-<LI>GPU compute provisioning for inference and training workloads</LI>
-<LI>Agent tooling with tool use, memory, and task planning</LI>
-<LI>Support for popular open source LLMs</LI>
-<LI>API access for programmatic integration</LI>
-<LI>Open source agent framework integration</LI>
-</UL>
-<P>
-CloudGPU builds on what I learned from building Hola Agent, an AI agent
-framework for autonomous agents. The goal is to give people the
-infrastructure to go from prototype to production with AI agents
-without the usual headaches.
-</P>
-<P>
-You can learn more at <A HREF="https://cloudgpu.io/">cloudgpu.io</A>.
-</P>
+<p>
+Today I am excited to announce the launch of CloudGPU, an AI
+infrastructure and agent tooling platform. CloudGPU provides GPU
+compute resources and a suite of tools for building, deploying, and
+managing AI agents.
+</p>
+<p>
+The platform is designed to make it easier for developers to work with
+large language models and build autonomous agent systems. Key features
+include:
+</p>
+<ul>
+<li>GPU compute provisioning for inference and training workloads</li>
+<li>Agent tooling with tool-use, memory, and task planning</li>
+<li>Support for popular open source LLMs</li>
+<li>API access for programmatic integration</li>
+<li>Open source agent framework integration</li>
+</ul>
+<p>
+CloudGPU builds on my experience working on Hola Agent, an AI agent
+framework I developed for building autonomous agents. The goal is to
+provide infrastructure that makes it easy to go from prototype to
+production with AI agents.
+</p>
+<p>
+You can learn more at <a href="https://cloudgpu.io/">cloudgpu.io</a>.
+</p>
 
-<P>
-<HR WIDTH="50%" NOSHADE ALIGN="LEFT">
-<BR>
-<FONT SIZE="-1">
-[ <A HREF="index.html">Blog</A> | <A HREF="../index.html">Home</A> | <A HREF="../contact.html">Contact</A> ]
-</FONT>
+<p>
+<hr class="section">
+<br>
+<span class="footer-nav">
+[ <a href="index.html">Blog</a> | <a href="../index.html">Home</a> | <a href="../contact.html">Contact</a> ]
+</span>
+</p>
 
-</FONT>
-</TD></TR>
-</TABLE>
-<HR WIDTH="90%" NOSHADE>
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD ALIGN="CENTER">
-<FONT SIZE="-2" FACE="Arial, Helvetica, sans-serif">
-Copyright &copy; 2024 Siraj Razick. All rights reserved.<BR>
-This page was hand-written in vi on Linux.<BR>
-<A HREF="../contact.html">Contact</A> | <A HREF="../index.html">Home</A> | <A HREF="http://validator.w3.org/">Validate</A>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-</TR>
-</TABLE>
+</div>
+</td></tr>
+</table>
+<hr class="footer">
+<table class="footer">
+<tr><td class="footer-text">
+Copyright &copy; 2024 Siraj Razick. All rights reserved.<br>
+This page was hand-written in vi on Linux.<br>
+<a href="../contact.html">Contact</a> | <a href="../index.html">Home</a> | <a href="https://validator.w3.org/">Validate</a>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
 
-</BODY>
-</HTML>
+</body>
+</html>

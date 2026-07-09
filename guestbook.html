@@ -1,136 +1,134 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>Guestbook - Siraj Razick</TITLE>
-</HEAD>
-<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guestbook - Siraj Razick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
-<TR>
-<TD VALIGN="TOP" WIDTH="160">
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="+1"><B>Siraj Razick</B></FONT>
-</TD></TR>
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="-1">Open Source Developer</FONT>
-</TD></TR>
-</TABLE>
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD BGCOLOR="#FFFFFF">
-<FONT FACE="Courier New, Courier, monospace" SIZE="-1">
-<BR><B>Navigation</B><HR WIDTH="100%">
-&nbsp;&nbsp;<A HREF="index.html">Home</A><BR>
-&nbsp;&nbsp;<A HREF="about.html">About Me</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html">Projects</A><BR>
-&nbsp;&nbsp;<A HREF="blog/index.html">Blog</A><BR>
-&nbsp;&nbsp;<A HREF="links.html">Links</A><BR>
-&nbsp;&nbsp;<A HREF="faq.html">FAQ</A><BR>
-&nbsp;&nbsp;<A HREF="hire.html">Hire Me</A><BR>
-&nbsp;&nbsp;<A HREF="contact.html">Contact</A><BR>
-<HR WIDTH="100%"><B>Topics</B><BR>
-&nbsp;&nbsp;<A HREF="projects.html#desktop">Desktop/Linux</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#browser">Browser Engines</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#mobile">Mobile/Multimedia</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#blockchain">Blockchain</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html#ai">AI Platforms</A><BR>
-<HR WIDTH="100%"><B>Misc</B><BR>
-&nbsp;&nbsp;<A HREF="gpg-key.txt">PGP Key</A><BR>
-&nbsp;&nbsp;<A HREF="resume.html">Resume</A><BR>
-&nbsp;&nbsp;<A HREF="guestbook.html">Guestbook</A><BR>
-<HR WIDTH="100%"><FONT SIZE="-2">Last updated:<BR>2024-01-15<BR><BR>Page served by<BR>Apache/2.4<BR>on Linux<BR></FONT>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-<TD VALIGN="TOP" WIDTH="10">&nbsp;</TD>
-<TD VALIGN="TOP">
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="10">
-<TR><TD>
-<FONT FACE="Times New Roman, Times, serif">
+<table class="layout">
+<tr>
+<td class="sidebar">
+<table class="sidebar-name">
+<tr><td><span class="name-title">Siraj Razick</span></td></tr>
+<tr><td><span class="name-sub">Open Source Developer</span></td></tr>
+</table>
+<table class="sidebar-nav">
+<tr><td>
+<div class="sidebar-content">
+<br><b>Navigation</b><hr class="nav">
+&nbsp;&nbsp;<a href="index.html">Home</a><br>
+&nbsp;&nbsp;<a href="about.html">About Me</a><br>
+&nbsp;&nbsp;<a href="projects.html">Projects</a><br>
+&nbsp;&nbsp;<a href="blog/index.html">Blog</a><br>
+&nbsp;&nbsp;<a href="links.html">Links</a><br>
+&nbsp;&nbsp;<a href="faq.html">FAQ</a><br>
+&nbsp;&nbsp;<a href="hire.html">Hire Me</a><br>
+&nbsp;&nbsp;<a href="contact.html">Contact</a><br>
+<hr class="nav"><b>Topics</b><br>
+&nbsp;&nbsp;<a href="projects.html#desktop">Desktop/Linux</a><br>
+&nbsp;&nbsp;<a href="projects.html#browser">Browser Engines</a><br>
+&nbsp;&nbsp;<a href="projects.html#mobile">Mobile/Multimedia</a><br>
+&nbsp;&nbsp;<a href="projects.html#blockchain">Blockchain</a><br>
+&nbsp;&nbsp;<a href="projects.html#ai">AI Platforms</a><br>
+<hr class="nav"><b>Misc</b><br>
+&nbsp;&nbsp;<a href="gpg-key.txt">PGP Key</a><br>
+&nbsp;&nbsp;<a href="resume.html">Resume</a><br>
+&nbsp;&nbsp;<a href="guestbook.html">Guestbook</a><br>
+<hr class="nav"><span class="sidebar-updated">Last updated:<br>2024-01-15<br><br>Page served by<br>Apache/2.4<br>on Linux<br></span>
+</div>
+</td></tr>
+</table>
+</td>
+<td class="spacer">&nbsp;</td>
+<td class="content">
+<table class="content">
+<tr><td>
+<div class="content-body">
 
-<H2><FONT FACE="Arial, Helvetica, sans-serif">Guestbook</FONT></H2>
+<h2>Guestbook</h2>
 
-<P>
+<p>
 Thanks for stopping by! Feel free to sign my guestbook.
-</P>
+</p>
 
 <!-- Guestbook Form -->
-<FORM ACTION="" METHOD="POST">
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR>
-<TD><B>Name:</B></TD>
-<TD><INPUT TYPE="TEXT" NAME="name" SIZE="40"></TD>
-</TR>
-<TR>
-<TD><B>Email:</B></TD>
-<TD><INPUT TYPE="TEXT" NAME="email" SIZE="40"></TD>
-</TR>
-<TR>
-<TD VALIGN="TOP"><B>Message:</B></TD>
-<TD><TEXTAREA NAME="message" ROWS="5" COLS="40"></TEXTAREA></TD>
-</TR>
-<TR>
-<TD>&nbsp;</TD>
-<TD><INPUT TYPE="SUBMIT" VALUE="Sign Guestbook"> <INPUT TYPE="RESET" VALUE="Clear"></TD>
-</TR>
-</TABLE>
-</FORM>
+<form action="" method="post" class="guestbook-form">
+<table class="guestbook-table">
+<tr>
+<td><b>Name:</b></td>
+<td><input type="text" name="name" size="40"></td>
+</tr>
+<tr>
+<td><b>Email:</b></td>
+<td><input type="text" name="email" size="40"></td>
+</tr>
+<tr>
+<td><b>Message:</b></td>
+<td><textarea name="message" rows="5" cols="40"></textarea></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input type="submit" value="Sign Guestbook"> <input type="reset" value="Clear"></td>
+</tr>
+</table>
+</form>
 
-<HR NOSHADE>
+<hr class="guestbook-divider">
 
-<H3><FONT FACE="Arial, Helvetica, sans-serif">Recent Entries</FONT></H3>
+<h3>Recent Entries</h3>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="5" WIDTH="100%">
-<TR BGCOLOR="#F0F0F0">
-<TD>
-<B>John D.</B> &mdash; 2024-01-10<BR>
+<table class="guestbook-entries">
+<tr class="row-alt">
+<td>
+<b>John D.</b> &mdash; 2024-01-10<br>
 Great work on PlexyDesk! The Wayland bridge is really useful.
-</TD>
-</TR>
-<TR>
-<TD>
-<B>Alice K.</B> &mdash; 2023-12-15<BR>
+</td>
+</tr>
+<tr>
+<td>
+<b>Alice K.</b> &mdash; 2023-12-15<br>
 Love the retro website design. Takes me back to the good old days of the web.
-</TD>
-</TR>
-<TR BGCOLOR="#F0F0F0">
-<TD>
-<B>Mike R.</B> &mdash; 2023-11-20<BR>
+</td>
+</tr>
+<tr class="row-alt">
+<td>
+<b>Mike R.</b> &mdash; 2023-11-20<br>
 efinder.lk is a great tool. Keep it up!
-</TD>
-</TR>
-<TR>
-<TD>
-<B>Sarah L.</B> &mdash; 2023-10-05<BR>
+</td>
+</tr>
+<tr>
+<td>
+<b>Sarah L.</b> &mdash; 2023-10-05<br>
 Found your site through the WebKit mailing list. Nice to see all your projects in one place.
-</TD>
-</TR>
-</TABLE>
+</td>
+</tr>
+</table>
 
-<P>
-<HR WIDTH="50%" NOSHADE ALIGN="LEFT">
-<BR>
-<FONT SIZE="-1">
-[ <A HREF="index.html">Home</A> | <A HREF="contact.html">Contact</A> | <A HREF="about.html">About</A> ]
-</FONT>
+<p>
+<hr class="section">
+<br>
+<span class="footer-nav">
+[ <a href="index.html">Home</a> | <a href="contact.html">Contact</a> | <a href="about.html">About</a> ]
+</span>
+</p>
 
-</FONT>
-</TD></TR>
-</TABLE>
-<HR WIDTH="90%" NOSHADE>
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD ALIGN="CENTER">
-<FONT SIZE="-2" FACE="Arial, Helvetica, sans-serif">
-Copyright &copy; 2024 Siraj Razick. All rights reserved.<BR>
-This page was hand-written in vi on Linux.<BR>
-<A HREF="contact.html">Contact</A> | <A HREF="index.html">Home</A> | <A HREF="http://validator.w3.org/">Validate</A>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-</TR>
-</TABLE>
+</div>
+</td></tr>
+</table>
+<hr class="footer">
+<table class="footer">
+<tr><td class="footer-text">
+Copyright &copy; 2024 Siraj Razick. All rights reserved.<br>
+This page was hand-written in vi on Linux.<br>
+<a href="contact.html">Contact</a> | <a href="index.html">Home</a> | <a href="https://validator.w3.org/">Validate</a>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
 
-</BODY>
-</HTML>
+</body>
+</html>

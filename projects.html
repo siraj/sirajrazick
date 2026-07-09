@@ -1,270 +1,263 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>Projects - Siraj Razick</TITLE>
-</HEAD>
-<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects - Siraj Razick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
-<TR>
-<TD VALIGN="TOP" WIDTH="160">
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="+1"><B>Siraj Razick</B></FONT>
-</TD></TR>
-<TR><TD>
-<FONT COLOR="#000000" FACE="Courier New, Courier, monospace" SIZE="-1">Open Source Developer</FONT>
-</TD></TR>
-</TABLE>
-<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD BGCOLOR="#FFFFFF">
-<FONT FACE="Courier New, Courier, monospace" SIZE="-1">
-<BR><B>Navigation</B><HR WIDTH="100%">
-&nbsp;&nbsp;<A HREF="index.html">Home</A><BR>
-&nbsp;&nbsp;<A HREF="about.html">About Me</A><BR>
-&nbsp;&nbsp;<A HREF="projects.html">Projects</A><BR>
-&nbsp;&nbsp;<A HREF="blog/index.html">Blog</A><BR>
-&nbsp;&nbsp;<A HREF="links.html">Links</A><BR>
-&nbsp;&nbsp;<A HREF="faq.html">FAQ</A><BR>
-&nbsp;&nbsp;<A HREF="hire.html">Hire Me</A><BR>
-&nbsp;&nbsp;<A HREF="contact.html">Contact</A><BR>
-<HR WIDTH="100%"><B>Topics</B><BR>
-&nbsp;&nbsp;<A HREF="#desktop">Desktop/Linux</A><BR>
-&nbsp;&nbsp;<A HREF="#browser">Browser Engines</A><BR>
-&nbsp;&nbsp;<A HREF="#mobile">Mobile/Multimedia</A><BR>
-&nbsp;&nbsp;<A HREF="#blockchain">Blockchain</A><BR>
-&nbsp;&nbsp;<A HREF="#ai">AI Platforms</A><BR>
-<HR WIDTH="100%"><B>Misc</B><BR>
-&nbsp;&nbsp;<A HREF="gpg-key.txt">PGP Key</A><BR>
-&nbsp;&nbsp;<A HREF="resume.html">Resume</A><BR>
-&nbsp;&nbsp;<A HREF="guestbook.html">Guestbook</A><BR>
-<HR WIDTH="100%"><FONT SIZE="-2">Last updated:<BR>2024-01-15<BR><BR>Page served by<BR>Apache/2.4<BR>on Linux<BR></FONT>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-<TD VALIGN="TOP" WIDTH="10">&nbsp;</TD>
-<TD VALIGN="TOP">
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="10">
-<TR><TD>
-<FONT FACE="Times New Roman, Times, serif">
+<table class="layout">
+<tr>
+<td class="sidebar">
+<table class="sidebar-name">
+<tr><td><span class="name-title">Siraj Razick</span></td></tr>
+<tr><td><span class="name-sub">Open Source Developer</span></td></tr>
+</table>
+<table class="sidebar-nav">
+<tr><td>
+<div class="sidebar-content">
+<br><b>Navigation</b><hr class="nav">
+&nbsp;&nbsp;<a href="index.html">Home</a><br>
+&nbsp;&nbsp;<a href="about.html">About Me</a><br>
+&nbsp;&nbsp;<a href="projects.html">Projects</a><br>
+&nbsp;&nbsp;<a href="blog/index.html">Blog</a><br>
+&nbsp;&nbsp;<a href="links.html">Links</a><br>
+&nbsp;&nbsp;<a href="faq.html">FAQ</a><br>
+&nbsp;&nbsp;<a href="hire.html">Hire Me</a><br>
+&nbsp;&nbsp;<a href="contact.html">Contact</a><br>
+<hr class="nav"><b>Topics</b><br>
+&nbsp;&nbsp;<a href="#desktop">Desktop/Linux</a><br>
+&nbsp;&nbsp;<a href="#browser">Browser Engines</a><br>
+&nbsp;&nbsp;<a href="#mobile">Mobile/Multimedia</a><br>
+&nbsp;&nbsp;<a href="#blockchain">Blockchain</a><br>
+&nbsp;&nbsp;<a href="#ai">AI Platforms</a><br>
+<hr class="nav"><b>Misc</b><br>
+&nbsp;&nbsp;<a href="gpg-key.txt">PGP Key</a><br>
+&nbsp;&nbsp;<a href="resume.html">Resume</a><br>
+&nbsp;&nbsp;<a href="guestbook.html">Guestbook</a><br>
+<hr class="nav"><span class="sidebar-updated">Last updated:<br>2024-01-15<br><br>Page served by<br>Apache/2.4<br>on Linux<br></span>
+</div>
+</td></tr>
+</table>
+</td>
+<td class="spacer">&nbsp;</td>
+<td class="content">
+<table class="content">
+<tr><td>
+<div class="content-body">
 
-<H2><FONT FACE="Arial, Helvetica, sans-serif">Projects</FONT></H2>
+<h2>Projects</h2>
 
-<P>
+<p>
 Here are the main open source projects I've worked on, grouped by area.
-</P>
+</p>
 
 <!-- ==================== DESKTOP ==================== -->
-<A NAME="desktop"></A>
-<H3><FONT FACE="Arial, Helvetica, sans-serif">Desktop &amp; Linux Platform</FONT></H3>
+<h3 id="desktop">Desktop &amp; Linux Platform</h3>
 
-<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="5" WIDTH="100%">
-<TR BGCOLOR="#E0E0E0">
-<TD><B>Project</B></TD>
-<TD><B>Description</B></TD>
-<TD><B>Technologies</B></TD>
-</TR>
+<table class="data">
+<tr class="row-header">
+<td><b>Project</b></td>
+<td><b>Description</b></td>
+<td><b>Technologies</b></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>GNOME / Telepathy</B></TD>
-<TD>Worked on the GNOME desktop communication stack, including the Telepathy Framework and early WebRTC on WebKit. This brought real-time communication features to the GNOME desktop.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C, GLib, Telepathy, WebRTC, WebKit</FONT></TD>
-</TR>
+<tr>
+<td><b>GNOME / Telepathy</b></td>
+<td>Worked on the GNOME desktop communication stack, including the Telepathy Framework and early WebRTC on WebKit. This brought real-time communication features to the GNOME desktop.</td>
+<td><span class="tech">C, GLib, Telepathy, WebRTC, WebKit</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>KDE Plasma / KBFX</B></TD>
-<TD>Worked on KDE Plasma desktop tech. Built KBFX, a customizable application menu for KDE that gave users an alternative to the standard K Menu with theming and layout options.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, Qt, KDE Plasma, CMake</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>KDE Plasma / KBFX</b></td>
+<td>Worked on KDE Plasma desktop tech. Built KBFX, a customizable application menu for KDE that gave users an alternative to the standard K Menu with theming and layout options.</td>
+<td><span class="tech">C++, Qt, KDE Plasma, CMake</span></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>PlexyDesk</B></TD>
-<TD>Built the PlexyDesk compositor protocol and Wayland bridge. PlexyDesk is a desktop extension framework that gives you compositor-level widgets and a protocol for integrating desktop shells with Wayland.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, Qt, Wayland, OpenGL, EGL</FONT></TD>
-</TR>
+<tr>
+<td><b>PlexyDesk</b></td>
+<td>Built the PlexyDesk compositor protocol and Wayland bridge. PlexyDesk is a desktop extension framework that gives you compositor-level widgets and a protocol for integrating desktop shells with Wayland.</td>
+<td><span class="tech">C++, Qt, Wayland, OpenGL, EGL</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>XQuadro</B></TD>
-<TD>Built XQuadro, an X11 display server bridge for multi-display and display server bridging on X11-based systems.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C, X11, Xlib, XCB</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>XQuadro</b></td>
+<td>Built XQuadro, an X11 display server bridge for multi-display and display server bridging on X11-based systems.</td>
+<td><span class="tech">C, X11, Xlib, XCB</span></td>
+</tr>
 
-</TABLE>
+</table>
 
-<BR>
+<br>
 
 <!-- ==================== BROWSER ==================== -->
-<A NAME="browser"></A>
-<H3><FONT FACE="Arial, Helvetica, sans-serif">Browser Engines</FONT></H3>
+<h3 id="browser">Browser Engines</h3>
 
-<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="5" WIDTH="100%">
-<TR BGCOLOR="#E0E0E0">
-<TD><B>Project</B></TD>
-<TD><B>Description</B></TD>
-<TD><B>Technologies</B></TD>
-</TR>
+<table class="data">
+<tr class="row-header">
+<td><b>Project</b></td>
+<td><b>Description</b></td>
+<td><b>Technologies</b></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>V8 JavaScript Engine</B></TD>
-<TD>Contributed to the V8 JavaScript engine, focused on speed and performance. Worked on JIT compiler improvements and runtime performance tuning.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, JavaScript, JIT, V8</FONT></TD>
-</TR>
+<tr>
+<td><b>V8 JavaScript Engine</b></td>
+<td>Contributed to the V8 JavaScript engine, focused on speed and performance. Worked on JIT compiler improvements and runtime performance tuning.</td>
+<td><span class="tech">C++, JavaScript, JIT, V8</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>SpiderMonkey</B></TD>
-<TD>Worked on Mozilla's SpiderMonkey JavaScript engine, adding GObject Introspection support. This made it possible to automatically generate language bindings for GNOME-based JavaScript apps.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, JavaScript, GObject Introspection, GLib</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>SpiderMonkey</b></td>
+<td>Worked on Mozilla's SpiderMonkey JavaScript engine, adding GObject Introspection support. This made it possible to automatically generate language bindings for GNOME-based JavaScript apps.</td>
+<td><span class="tech">C++, JavaScript, GObject Introspection, GLib</span></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>Mozilla / Gecko</B></TD>
-<TD>Contributed to the Mozilla Gecko rendering engine, working on CSS animations and rendering pipeline improvements.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, CSS, XUL, Gecko</FONT></TD>
-</TR>
+<tr>
+<td><b>Mozilla / Gecko</b></td>
+<td>Contributed to the Mozilla Gecko rendering engine, working on CSS animations and rendering pipeline improvements.</td>
+<td><span class="tech">C++, CSS, XUL, Gecko</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>WebKit</B></TD>
-<td>Contributed to WebKit, working on HTML5 video support and WebRTC integration. This helped bring real-time communication and media playback to WebKit-based browsers.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, WebKit, HTML5, WebRTC, GStreamer</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>WebKit</b></td>
+<td>Contributed to WebKit, working on HTML5 video support and WebRTC integration. This helped bring real-time communication and media playback to WebKit-based browsers.</td>
+<td><span class="tech">C++, WebKit, HTML5, WebRTC, GStreamer</span></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>Google Chrome (E-Ink Rendering)</B></TD>
-<TD>Worked on Google Chrome, adding e-ink rendering support so the browser works well on e-ink display devices.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, Chromium, Skia, E-Ink</FONT></TD>
-</TR>
+<tr>
+<td><b>Google Chrome (E-Ink Rendering)</b></td>
+<td>Worked on Google Chrome, adding e-ink rendering support so the browser works well on e-ink display devices.</td>
+<td><span class="tech">C++, Chromium, Skia, E-Ink</span></td>
+</tr>
 
-</TABLE>
+</table>
 
-<BR>
+<br>
 
 <!-- ==================== MOBILE ==================== -->
-<A NAME="mobile"></A>
-<H3><FONT FACE="Arial, Helvetica, sans-serif">Mobile &amp; Multimedia</FONT></H3>
+<h3 id="mobile">Mobile &amp; Multimedia</h3>
 
-<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="5" WIDTH="100%">
-<TR BGCOLOR="#E0E0E0">
-<TD><B>Project</B></TD>
-<TD><B>Description</B></TD>
-<TD><B>Technologies</B></TD>
-</TR>
+<table class="data">
+<tr class="row-header">
+<td><b>Project</b></td>
+<td><b>Description</b></td>
+<td><b>Technologies</b></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>GStreamer</B></TD>
-<TD>Contributed to GStreamer, the open source multimedia framework. Worked on pipeline elements, codec integration, and multimedia playback for embedded and mobile platforms.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C, GStreamer, Glib, multimedia codecs</FONT></TD>
-</TR>
+<tr>
+<td><b>GStreamer</b></td>
+<td>Contributed to GStreamer, the open source multimedia framework. Worked on pipeline elements, codec integration, and multimedia playback for embedded and mobile platforms.</td>
+<td><span class="tech">C, GStreamer, Glib, multimedia codecs</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>Nokia Browser (Mozilla-based)</B></TD>
-<TD>Worked on the Mozilla-based Nokia Browser for Nokia's mobile platforms. Did rendering, performance, and platform integration work for mobile browsing.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, Mozilla, Gecko, Maemo, Harmattan</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>Nokia Browser (Mozilla-based)</b></td>
+<td>Worked on the Mozilla-based Nokia Browser for Nokia's mobile platforms. Did rendering, performance, and platform integration work for mobile browsing.</td>
+<td><span class="tech">C++, Mozilla, Gecko, Maemo, Harmattan</span></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>Nokia Harmattan / MeeGo</B></TD>
-<TD>Contributed to the Nokia Harmattan platform and MeeGo mobile OS. Worked on system-level components, UI framework integration, and application platform support.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, Qt, MeeGo, Harmattan, Linux</FONT></TD>
-</TR>
+<tr>
+<td><b>Nokia Harmattan / MeeGo</b></td>
+<td>Contributed to the Nokia Harmattan platform and MeeGo mobile OS. Worked on system-level components, UI framework integration, and application platform support.</td>
+<td><span class="tech">C++, Qt, MeeGo, Harmattan, Linux</span></td>
+</tr>
 
-</TABLE>
+</table>
 
-<BR>
+<br>
 
 <!-- ==================== BLOCKCHAIN ==================== -->
-<A NAME="blockchain"></A>
-<H3><FONT FACE="Arial, Helvetica, sans-serif">Blockchain &amp; Web3</FONT></H3>
+<h3 id="blockchain">Blockchain &amp; Web3</h3>
 
-<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="5" WIDTH="100%">
-<TR BGCOLOR="#E0E0E0">
-<TD><B>Project</B></TD>
-<TD><B>Description</B></TD>
-<TD><B>Technologies</B></TD>
-</TR>
+<table class="data">
+<tr class="row-header">
+<td><b>Project</b></td>
+<td><b>Description</b></td>
+<td><b>Technologies</b></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>Web3 Systems</B></TD>
-<TD>Built Web3 infrastructure and tooling, working on blockchain integration systems and decentralized application platforms.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">Solidity, JavaScript, Web3.js, Ethereum</FONT></TD>
-</TR>
+<tr>
+<td><b>Web3 Systems</b></td>
+<td>Built Web3 infrastructure and tooling, working on blockchain integration systems and decentralized application platforms.</td>
+<td><span class="tech">Solidity, JavaScript, Web3.js, Ethereum</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>BTC / Bitcoin Core</B></TD>
-<TD>Contributed to Bitcoin-based blockchain technologies, working on ledger systems and protocol-level BTC work.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, Bitcoin, blockchain, cryptography</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>BTC / Bitcoin Core</b></td>
+<td>Contributed to Bitcoin-based blockchain technologies, working on ledger systems and protocol-level BTC work.</td>
+<td><span class="tech">C++, Bitcoin, blockchain, cryptography</span></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>LiquidBTC</B></TD>
-<TD>Worked on LiquidBTC and related ledger systems, focusing on sidechain technology and federated blockchain infrastructure.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">C++, Elements, Liquid, sidechains</FONT></TD>
-</TR>
+<tr>
+<td><b>LiquidBTC</b></td>
+<td>Worked on LiquidBTC and related ledger systems, focusing on sidechain technology and federated blockchain infrastructure.</td>
+<td><span class="tech">C++, Elements, Liquid, sidechains</span></td>
+</tr>
 
-</TABLE>
+</table>
 
-<BR>
+<br>
 
 <!-- ==================== AI ==================== -->
-<A NAME="ai"></A>
-<H3><FONT FACE="Arial, Helvetica, sans-serif">AI &amp; Platforms</FONT></H3>
+<h3 id="ai">AI &amp; Platforms</h3>
 
-<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="5" WIDTH="100%">
-<TR BGCOLOR="#E0E0E0">
-<TD><B>Project</B></TD>
-<TD><B>Description</B></TD>
-<TD><B>Technologies</B></TD>
-</TR>
+<table class="data">
+<tr class="row-header">
+<td><b>Project</b></td>
+<td><b>Description</b></td>
+<td><b>Technologies</b></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>CloudGPU</B></TD>
-<TD>Founded CloudGPU, a platform for AI compute and agent tooling. Provides GPU resources and tooling for building and deploying AI agents.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">Python, Go, Kubernetes, GPU, LLMs</FONT></TD>
-</TR>
+<tr>
+<td><b>CloudGPU</b></td>
+<td>Founded CloudGPU, a platform for AI compute and agent tooling. Provides GPU resources and tooling for building and deploying AI agents.</td>
+<td><span class="tech">Python, Go, Kubernetes, GPU, LLMs</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>Hola Agent</B></TD>
-<TD>Built Hola Agent, a framework for creating autonomous AI agents with tool use, memory, and task planning.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">Python, LLMs, agent frameworks, tools</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>Hola Agent</b></td>
+<td>Built Hola Agent, a framework for creating autonomous AI agents with tool use, memory, and task planning.</td>
+<td><span class="tech">Python, LLMs, agent frameworks, tools</span></td>
+</tr>
 
-<TR>
-<TD VALIGN="TOP"><B>efinder.lk</B></TD>
-<TD>Created efinder.lk, a fact-checking engine that uses AI agents to verify claims and give you sourced fact-checks.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">Python, LLMs, NLP, web scraping</FONT></TD>
-</TR>
+<tr>
+<td><b>efinder.lk</b></td>
+<td>Created efinder.lk, a fact-checking engine that uses AI agents to verify claims and give you sourced fact-checks.</td>
+<td><span class="tech">Python, LLMs, NLP, web scraping</span></td>
+</tr>
 
-<TR BGCOLOR="#F0F0F0">
-<TD VALIGN="TOP"><B>Sharepanda.org</B></TD>
-<TD>Built Sharepanda.org, a creator platform for content sharing and monetization.</TD>
-<TD VALIGN="TOP"><FONT SIZE="-1">JavaScript, Node.js, Web3, creator tools</FONT></TD>
-</TR>
+<tr class="row-alt">
+<td><b>Sharepanda.org</b></td>
+<td>Built Sharepanda.org, a creator platform for content sharing and monetization.</td>
+<td><span class="tech">JavaScript, Node.js, Web3, creator tools</span></td>
+</tr>
 
-</TABLE>
+</table>
 
-<P>
-<HR WIDTH="50%" NOSHADE ALIGN="LEFT">
-<BR>
-<FONT SIZE="-1">
-[ <A HREF="index.html">Home</A> | <A HREF="about.html">About</A> | <A HREF="contact.html">Contact</A> ]
-</FONT>
+<p>
+<hr class="section">
+<br>
+<span class="footer-nav">
+[ <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a> ]
+</span>
+</p>
 
-</FONT>
-</TD></TR>
-</TABLE>
-<HR WIDTH="90%" NOSHADE>
-<TABLE WIDTH="90%" BORDER="0" CELLSPACING="0" CELLPADDING="5">
-<TR><TD ALIGN="CENTER">
-<FONT SIZE="-2" FACE="Arial, Helvetica, sans-serif">
-Copyright &copy; 2024 Siraj Razick. All rights reserved.<BR>
-This page was hand-written in vi on Linux.<BR>
-<A HREF="contact.html">Contact</A> | <A HREF="index.html">Home</A> | <A HREF="http://validator.w3.org/">Validate</A>
-</FONT>
-</TD></TR>
-</TABLE>
-</TD>
-</TR>
-</TABLE>
+</div>
+</td></tr>
+</table>
+<hr class="footer">
+<table class="footer">
+<tr><td class="footer-text">
+Copyright &copy; 2024 Siraj Razick. All rights reserved.<br>
+This page was hand-written in vi on Linux.<br>
+<a href="contact.html">Contact</a> | <a href="index.html">Home</a> | <a href="https://validator.w3.org/">Validate</a>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
 
-</BODY>
-</HTML>
+</body>
+</html>
