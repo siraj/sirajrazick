@@ -54,34 +54,23 @@
 <P><FONT SIZE="-1"><I>2023-05-02</I></FONT></P>
 
 <P>
-I have updated the PlexyDesk Wayland bridge with improved compositor
-protocol support and better multi-monitor handling. This update has
-been in the works for a while and I am happy to finally release it.
+I have updated the PlexyDesk Wayland bridge to support the latest
+Wayland protocols and improve compatibility with modern compositors.
 </P>
-
 <P>
-Key changes in this update:
+The Wayland bridge allows PlexyDesk widgets to render on Wayland
+sessions, which is increasingly important as distributions move away
+from X11. The main changes in this update:
 </P>
-
 <UL>
-<LI>Improved Wayland surface management for desktop widgets</LI>
-<LI>Better support for multi-monitor configurations</LI>
-<LI>Updated compositor protocol to handle DPI scaling</LI>
-<LI>Fixed several rendering issues with OpenGL/EGL contexts</LI>
-<LI>Improved input handling for touch and pointer events</LI>
+<LI>Migrated to the <CODE>xdg-shell</CODE> stable protocol</LI>
+<LI>Added support for <CODE>layer-shell</CODE> for desktop overlay widgets</LI>
+<LI>Fixed rendering glitches on HiDPI displays</LI>
+<LI>Improved input handling for touch devices</LI>
 </UL>
-
 <P>
-PlexyDesk is a desktop extension framework that provides compositor-level
-desktop widgets. The Wayland bridge allows PlexyDesk to integrate with
-Wayland compositors, providing a protocol for desktop shell integration.
-</P>
-
-<P>
-The compositor protocol is designed to be compositor-agnostic, so it
-works with wlroots-based compositors, KWin, Mutter, and others. The
-goal is to provide a standard way for desktop extensions to communicate
-with the compositor without being tied to any specific implementation.
+If you are using PlexyDesk on a Wayland session, please update to the
+latest build and report any issues on the <A HREF="https://github.com/siraj/plexydesk">GitHub repo</A>.
 </P>
 
 <P>

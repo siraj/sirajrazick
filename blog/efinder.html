@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
-<TITLE>efinder.lk - Blog - Siraj Razick</TITLE>
+<TITLE>efinder.lk: Agentic Fact-Checking with AI - Blog - Siraj Razick</TITLE>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
 
@@ -55,31 +55,26 @@
 
 <P>
 I recently released efinder.lk, an agentic fact-checking engine that
-uses AI agents to verify claims and provide sourced fact-checking.
+uses AI to verify claims and detect misinformation.
 </P>
-
 <P>
-The problem efinder.lk addresses is the spread of misinformation online.
-Traditional fact-checking is manual and slow. efinder.lk uses AI agents
-that can:
+The system works by breaking down a claim into searchable queries,
+gathering evidence from multiple sources, and then reasoning about
+the collected information to arrive at a verdict. This is all done
+autonomously by an AI agent.
 </P>
-
+<P>
+Key design decisions:
+</P>
 <UL>
-<LI>Parse and understand claims in natural language</LI>
-<LI>Search for relevant sources and evidence</LI>
-<LI>Cross-reference multiple sources</LI>
-<LI>Provide a verdict with citations</LI>
+<LI><B>Multi-source verification</B> - the agent cross-references multiple sources before reaching a conclusion</LI>
+<LI><B>Transparent reasoning</B> - each step of the fact-checking process is logged and can be reviewed</LI>
+<LI><B>Sinhala and Tamil support</B> - built for the Sri Lankan context with local language processing</LI>
 </UL>
-
 <P>
-The system is built using the Hola Agent framework and uses LLMs for
-natural language understanding. Agents are given tools for web search,
-source retrieval, and claim analysis. The agents work through a
-multi-step reasoning process to arrive at a verdict.
-</P>
-
-<P>
-You can try it at <A HREF="https://efinder.lk/">efinder.lk</A>.
+The project is open source and available on GitHub. I am actively
+looking for contributors who are interested in AI safety and
+misinformation research.
 </P>
 
 <P>
