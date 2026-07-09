@@ -1,9 +1,8 @@
-/* Retro 90s website style - replicates HTML 4.0 look with CSS */
+/* Retro 90s website style - plain, no custom fonts */
 
 body {
   background: #ffffff;
   color: #000000;
-  font-family: "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
 }
@@ -36,14 +35,12 @@ table.sidebar-name td {
 }
 
 .name-title {
-  font-family: "Courier New", Courier, monospace;
   font-size: 1.17em;
   font-weight: bold;
   color: #000000;
 }
 
 .name-sub {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.83em;
   color: #000000;
 }
@@ -60,7 +57,6 @@ table.sidebar-nav td {
 }
 
 .sidebar-content {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.83em;
 }
 
@@ -75,6 +71,12 @@ table.sidebar-nav td {
 
 .sidebar-updated {
   font-size: 0.67em;
+}
+
+.sidebar-badge {
+  width: 88px;
+  height: 31px;
+  border: 0;
 }
 
 /* --- Spacer column --- */
@@ -96,15 +98,6 @@ table.content {
 table.content td {
   padding: 10px;
   border: 0;
-}
-
-.content-body {
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* --- Headings --- */
-h2, h3 {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* --- Data tables --- */
@@ -182,7 +175,6 @@ table.footer td {
 
 .footer-text {
   font-size: 0.67em;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-nav {
@@ -196,17 +188,7 @@ table.footer td {
   border: 1px solid #000;
 }
 .hire-box-text {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.83em;
-}
-
-/* --- Inline elements --- */
-code, tt, kbd, samp {
-  font-family: "Courier New", Courier, monospace;
-}
-
-pre {
-  font-family: "Courier New", Courier, monospace;
 }
 
 /* --- Font size helpers --- */
@@ -269,34 +251,6 @@ table.guestbook-entries td {
   border: 0;
 }
 
-/* --- Guestbook entry --- */
-.guestbook-entry {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.83em;
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
-}
-
-/* --- Blog post --- */
-.blog-post {
-  font-family: "Times New Roman", Times, serif;
-  margin: 1em 0;
-  padding: 10px;
-  border-left: 3px solid #000;
-}
-
-.blog-post-title {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-.blog-post-meta {
-  font-size: 0.83em;
-  color: #666;
-  margin-bottom: 0.5em;
-}
-
 /* --- Guestbook form --- */
 .guestbook-form {
   margin: 1em 0;
@@ -308,19 +262,12 @@ table.guestbook-entries td {
   font-size: 0.83em;
 }
 
-/* --- Resume header --- */
-.resume-header {
-  font-family: "Courier New", Courier, monospace;
-}
-
 /* --- PGP key blocks --- */
 pre.pgp-fingerprint {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.83em;
 }
 
 pre.pgp-key {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.67em;
   white-space: pre-wrap;
   word-wrap: break-word;
