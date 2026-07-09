@@ -1,0 +1,327 @@
+/* Retro 90s website style - replicates HTML 4.0 look with CSS */
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:link { color: #0000ee; }
+a:visited { color: #551a8b; }
+a:active { color: #ff0000; }
+
+/* --- Layout table (full page) --- */
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+
+/* --- Sidebar --- */
+td.sidebar {
+  width: 160px;
+  vertical-align: top;
+}
+
+table.sidebar-name {
+  width: 160px;
+  border-collapse: collapse;
+  border: 0;
+}
+table.sidebar-name td {
+  padding: 5px;
+  border: 0;
+}
+
+.name-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #000000;
+}
+
+.name-sub {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.83em;
+  color: #000000;
+}
+
+table.sidebar-nav {
+  width: 160px;
+  border-collapse: collapse;
+  border: 0;
+}
+table.sidebar-nav td {
+  padding: 5px;
+  border: 0;
+  background: #ffffff;
+}
+
+.sidebar-content {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.83em;
+}
+
+.sidebar-content hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: 2px;
+  margin: 0;
+}
+
+.sidebar-updated {
+  font-size: 0.67em;
+}
+
+/* --- Spacer column --- */
+td.spacer {
+  width: 10px;
+  vertical-align: top;
+}
+
+/* --- Content area --- */
+td.content {
+  vertical-align: top;
+}
+
+table.content {
+  width: 90%;
+  border-collapse: collapse;
+  border: 0;
+}
+table.content td {
+  padding: 10px;
+  border: 0;
+}
+
+.content-body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* --- Headings --- */
+h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Data tables --- */
+table.data {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+table.data td {
+  padding: 5px;
+  vertical-align: top;
+  border: 1px solid #000;
+}
+
+tr.row-alt td {
+  background: #f0f0f0;
+}
+
+tr.row-header td {
+  background: #e0e0e0;
+  font-weight: bold;
+}
+
+/* --- News table (borderless) --- */
+table.news {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+table.news td {
+  padding: 5px;
+  border: 0;
+}
+
+/* --- Horizontal rules --- */
+hr.section {
+  width: 50%;
+  border: none;
+  background: #000;
+  height: 2px;
+  margin-left: 0;
+}
+
+hr.footer {
+  width: 90%;
+  border: none;
+  background: #000;
+  height: 2px;
+}
+
+hr.nav {
+  width: 100%;
+  border: none;
+  background: #000;
+  height: 2px;
+  margin: 0;
+}
+
+hr.plain {
+  border: none;
+  background: #000;
+  height: 2px;
+}
+
+/* --- Footer --- */
+table.footer {
+  width: 90%;
+  border-collapse: collapse;
+  border: 0;
+}
+table.footer td {
+  padding: 5px;
+  border: 0;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.67em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-nav {
+  font-size: 0.83em;
+}
+
+/* --- Hire box --- */
+.hire-box {
+  background: #f0f0f0;
+  padding: 8px;
+  border: 1px solid #000;
+}
+.hire-box-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.83em;
+}
+
+/* --- Inline elements --- */
+code, tt, kbd, samp {
+  font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* --- Font size helpers --- */
+.small {
+  font-size: 0.83em;
+}
+
+.tiny {
+  font-size: 0.67em;
+}
+
+/* --- Alignment helpers --- */
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* --- Tech list --- */
+.tech {
+  font-size: 0.83em;
+}
+
+/* --- Blog entry list --- */
+table.blog-list {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+table.blog-list td {
+  padding: 5px;
+  border: 0;
+}
+
+/* --- Guestbook --- */
+table.guestbook-table {
+  border-collapse: collapse;
+  border: 0;
+}
+table.guestbook-table td {
+  padding: 5px;
+  border: 0;
+}
+
+hr.guestbook-divider {
+  border: none;
+  background: #000;
+  height: 2px;
+}
+
+table.guestbook-entries {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+table.guestbook-entries td {
+  padding: 5px;
+  border: 0;
+}
+
+/* --- Guestbook entry --- */
+.guestbook-entry {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.83em;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* --- Blog post --- */
+.blog-post {
+  font-family: "Times New Roman", Times, serif;
+  margin: 1em 0;
+  padding: 10px;
+  border-left: 3px solid #000;
+}
+
+.blog-post-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.blog-post-meta {
+  font-size: 0.83em;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+/* --- Guestbook form --- */
+.guestbook-form {
+  margin: 1em 0;
+}
+
+/* --- Blog index row dates --- */
+.row-date {
+  white-space: nowrap;
+  font-size: 0.83em;
+}
+
+/* --- Resume header --- */
+.resume-header {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* --- PGP key blocks --- */
+pre.pgp-fingerprint {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.83em;
+}
+
+pre.pgp-key {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.67em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
